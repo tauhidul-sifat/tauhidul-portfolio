@@ -42,7 +42,7 @@ export default async function SingleBlog({
                     {blog.publishDate}
                   </span>
                 )}
-                {blog.tags.map((tag) => {
+                {blog.tags.map((tag: any) => {
                   return (
                     <span
                       key={tag}

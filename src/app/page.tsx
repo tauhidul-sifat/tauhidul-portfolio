@@ -3,7 +3,6 @@ import Blogs from "@/components/blogs";
 import Hero from "@/components/hero";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Skills from "@/components/skills";
-import React from "react";
 
 const Home = () => {
   return (

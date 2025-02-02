@@ -123,7 +123,7 @@ export default async function page() {
                 <h3 className="text-2xl font-semibold">Skills</h3>
                 <hr />
                 <ul className="flex gap-1 py-2 text-xs flex-wrap">
-                  {items[0].skills.map((skill) => (
+                  {items[0].skills.map((skill: any) => (
                     <li
                       key={skill}
                       className="text-xs p-[4px] bg-gray-100 dark:bg-gray-500 rounded-full"
@@ -137,7 +137,7 @@ export default async function page() {
                 <h3 className="text-2xl font-semibold">Language</h3>
                 <hr />
                 <ul className="flex gap-1 text-xs py-2 flex-wrap">
-                  {items[0].languages.map((language) => (
+                  {items[0].languages.map((language: any) => (
                     <li key={language} className="text-xs p-[4px] ">
                       {language}
                     </li>
@@ -174,7 +174,7 @@ export default async function page() {
   );
 }
 
-export const revalidation = 3600;
+export const revalidate = 3600;
 
 export function generateMetadata() {
   return {

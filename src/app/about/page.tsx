@@ -1,5 +1,4 @@
 import About from "@/components/about";
-import React from "react";
 
 export default function page() {
   return (
@@ -9,7 +8,7 @@ export default function page() {
   );
 }
 
-export const revalidation = 3600;
+export const revalidate = 3600;
 
 export function generateMetadata() {
   return {

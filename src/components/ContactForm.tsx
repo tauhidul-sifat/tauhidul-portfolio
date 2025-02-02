@@ -52,8 +52,7 @@ export default function ContactForm({ className }: { className?: string }) {
           variant: "destructive",
         });
       }
-    } catch (error) {
-      console.error("Error submitting form:", error);
+    } catch (error: any) {
       toast({
         title: `Hey ${values.fastName}`,
         description: `Error submitting form:" ${error.message}`,

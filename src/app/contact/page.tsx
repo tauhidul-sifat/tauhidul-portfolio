@@ -5,7 +5,6 @@ import { media } from "@wix/sdk";
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 export default async function page() {
   const { items } = await WixClient.items.query("ContactPageContent").find();
@@ -36,7 +35,7 @@ export default async function page() {
                 {items[0].bannerTitle}
               </h3>
               <ul className="grid grid-cols-1 mt-10 sm:grid-cols-2 gap-x-8 gap-y-4">
-                {items[0].bannerTagList.map((tag) => {
+                {items[0].bannerTagList.map((tag: any) => {
                   return (
                     <li
                       key={tag}
@@ -79,7 +78,7 @@ export default async function page() {
     </section>
   );
 }
-export const revalidation = 3600;
+export const revalidate = 3600;
 export function generateMetadata() {
   return {
     title: "Contact Me | Tauhidul Islam – Get in Touch",

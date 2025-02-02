@@ -5,7 +5,7 @@ import { WixClient } from "@/lib/wixClient";
 import { media } from "@wix/sdk";
 import Image from "next/image";
 import Link from "next/link";
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 
 export default async function BlogAndArticlePage() {
   const { items } = await WixClient.items.query("BlogPageContent").find();
@@ -60,7 +60,7 @@ export default async function BlogAndArticlePage() {
     </div>
   );
 }
-export const revalidation = 3600;
+export const revalidate = 3600;
 export function generateMetadata() {
   return {
     title: "Blog | Tauhidul Islam – Web Development & Tech Insights",

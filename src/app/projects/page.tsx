@@ -62,7 +62,7 @@ export default async function ProjectPage() {
   );
 }
 
-export const revalidation = 3600;
+export const revalidate = 3600;
 export function generateMetadata() {
   return {
     title: "My Projects | Tauhidul Islam – MERN Stack Developer",

@@ -96,7 +96,7 @@ export default async function SingleProject({
                   Used Technology
                 </span>
                 <div className="flex items-center gap-1 lg:gap-3 flex-wrap">
-                  {project.usedTechnologys.map((tech) => {
+                  {project.usedTechnologys.map((tech: any) => {
                     return (
                       <span
                         key={tech}
@@ -113,7 +113,7 @@ export default async function SingleProject({
                   Tags
                 </span>
                 <div className="flex items-center gap-1 lg:gap-3 flex-wrap">
-                  {project.tags.map((tag) => {
+                  {project.tags.map((tag: any) => {
                     return (
                       <span
                         key={tag}
@@ -128,7 +128,7 @@ export default async function SingleProject({
               <hr />
 
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {project.featureImageGallery.map((item) => {
+                {project.featureImageGallery.map((item: any) => {
                   return (
                     <div key={item.slug}>
                       <Image
