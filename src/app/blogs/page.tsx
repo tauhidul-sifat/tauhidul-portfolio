@@ -5,10 +5,10 @@ import { WixClient } from "@/lib/wixClient";
 import { media } from "@wix/sdk";
 import Image from "next/image";
 import Link from "next/link";
-import { Suspense } from "react";
+import React, { Suspense } from "react";
 
-export default async function ProjectPage() {
-  const { items } = await WixClient.items.query("ProjectPageContent").find();
+export default async function BlogAndArticlePage() {
+  const { items } = await WixClient.items.query("BlogPageContent").find();
   if (!items.length)
     return (
       <SectionTitleAnimation className="overflow-x-hidden my-3">
@@ -17,24 +17,23 @@ export default async function ProjectPage() {
         </p>
       </SectionTitleAnimation>
     );
-
   return (
     <div>
       <MaxWidthWrapper className="my-5">
         <div className="text-center my-2 lg:my-6">
-          <h2 className="text-4xl font-semibold"> Project Phoenix</h2>
+          <h2 className="text-4xl font-semibold">Code Chronicles</h2>
           <h6 className="text-lg text-gray-500">
-            Revitalizing web development with Innovative Solutions
+            Breaking Down the Latest Innovations
           </h6>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-y-16 gap-10">
           {items.map((item) => {
             return (
               <Suspense key={item._id} fallback={<SkeletonCard />}>
-                <Link href={`projects/${item._id}`}>
+                <Link href={`blogs/${item._id}`}>
                   <div className="relative rounded-lg overflow-hidden duration-300 backdrop-blur-lg hover:scale-105 hover:shadow-2xl lg:hover:translate-x-3 border border-gray-300/30">
                     <Image
-                      className="w-full h-64 object-fill"
+                      className="w-full h-64 object-cover"
                       src={media.getScaledToFillImageUrl(
                         item.thumbnail,
                         600,
@@ -61,11 +60,10 @@ export default async function ProjectPage() {
     </div>
   );
 }
-
 export const revalidation = 3600;
 export function generateMetadata() {
   return {
-    title: "My Projects | Tauhidul Islam – MERN Stack Developer",
-    description: `Discover Tauhidul Islam's latest web development projects, showcasing expertise in full-stack development, Next.js, MongoDB, and cloud technologies.`,
+    title: "Blog | Tauhidul Islam – Web Development & Tech Insights",
+    description: `Read insightful blog posts by Tauhidul Islam on web development, JavaScript, MERN Stack, and industry trends. Stay updated with the latest tech tips.`,
   };
 }

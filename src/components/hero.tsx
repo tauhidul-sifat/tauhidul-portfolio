@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="#hero"
-      className="flex lg:flex-row flex-col-reverse items-center bg-[url(/hero-bg.svg)] rounded-md my-3 p-3 justify-between min-h-[60vh] lg:px-20 "
+      className="flex lg:flex-row flex-col-reverse items-center rounded-md my-3 p-3 justify-between min-h-[60vh] "
     >
       <IncreaseSectionContentAnimation>
         <div className="flex bg-transparent text-center lg:text-start flex-col gap-5">

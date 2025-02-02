@@ -1,20 +1,19 @@
 import About from "@/components/about";
-import { Section } from "lucide-react";
 import React from "react";
 
-const AboutPage = () => {
+export default function page() {
   return (
-    <section>
+    <div>
       <About />
-    </section>
+    </div>
   );
-};
+}
 
-export default AboutPage;
+export const revalidation = 3600;
 
 export function generateMetadata() {
   return {
-    title: "About - Tauhidul Islam",
-    description: `"full-stack developer," "web developer," "MERN stack," "web design," "e-commerce," "mobile app development," "SEO,"`,
+    title: "About Me | Tauhidul Islam – MERN Stack Developer",
+    description: `Learn more about Tauhidul Islam, a passionate MERN Stack Developer specializing in Next.js, React.js, Node.js, and modern web technologies.`,
   };
 }

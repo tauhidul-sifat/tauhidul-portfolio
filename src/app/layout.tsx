@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import FixedMedias from "@/components/FixedMedias";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: `Tauhidul Islam - MERN Stack Developer Portfolio`,
@@ -34,6 +35,7 @@ export default function RootLayout({
           <main className="w-full min-h-[90vh] flex flex-col px-5">
             {children}
           </main>
+          <Toaster />
           <Footer />
           <FixedMedias className="fixed right-0 top-44 bg-indigo-500" />
         </ThemeProvider>

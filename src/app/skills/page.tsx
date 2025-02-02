@@ -1,18 +1,19 @@
 import Skills from "@/components/skills";
+import React from "react";
 
-const SkillsPage = () => {
+export default function page() {
   return (
-    <section>
+    <div>
       <Skills />
-    </section>
+    </div>
   );
-};
+}
 
-export default SkillsPage;
+export const revalidation = 3600;
 
 export function generateMetadata() {
   return {
-    title: "Skills - Tauhidul Islam",
-    description: `Discover Tauhidul Islam's extensive skillset in MERN stack development, including HTML, CSS, JavaScript, React, Node.js, and MongoDB. Explore the technical expertise of Tauhidul Islam, a versatile web developer proficient in a wide range of technologies. Enhance your web development projects with Tauhidul Islam's mastery of HTML, CSS, JavaScript, React, Node.js, MongoDB, and more.`,
+    title: "My Skills | Tauhidul Islam – Full-Stack Developer",
+    description: `Explore the technical skills and expertise of Tauhidul Islam, including MERN Stack, TypeScript, GraphQL, CI/CD, and cloud deployment.`,
   };
 }

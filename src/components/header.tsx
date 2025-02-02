@@ -20,7 +20,8 @@ const Header = () => {
             ))}
             <ModeToggle />
           </nav>
-          <div className="lg:hidden">
+          <div className="lg:hidden flex gap-4 items-center">
+            <ModeToggle />
             <FlyMenu />
           </div>
         </div>

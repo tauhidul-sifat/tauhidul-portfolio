@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/tooltip";
 import { FooterJson } from "@/constant";
 import { cn } from "@/lib/utils";
+import { MessageCircle } from "lucide-react";
 import Link from "next/link";
 
 export default function FixedMedias({ className }: { className?: string }) {
@@ -37,6 +38,21 @@ export default function FixedMedias({ className }: { className?: string }) {
           </TooltipProvider>
         );
       })}
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger>
+            <Link
+              href="/contact"
+              className="w-3 h-3  lg:w-5 lg:h-5 duration-300 rounded-full text-white hover:text-primary dark:hover:text-primary "
+            >
+              <MessageCircle size={25} />
+            </Link>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Send Message</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
     </div>
   );
 }

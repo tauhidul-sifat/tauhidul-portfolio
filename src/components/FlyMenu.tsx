@@ -15,7 +15,7 @@ export default async function FlyMenu() {
         <AlignJustify size={30} className="text-primary" />
       </SheetTrigger>
       <SheetContent>
-        <SheetTitle className="sr-only">{}</SheetTitle>
+        <SheetTitle className="sr-only">Title</SheetTitle>
         <div className="mt-6">
           <ul
             className="max-h-[70vh] overflow-auto 

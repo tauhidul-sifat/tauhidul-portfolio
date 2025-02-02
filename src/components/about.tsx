@@ -11,7 +11,7 @@ export default async function About() {
   const { title, pageContent, gif } = items[0];
   return (
     <MaxWidthWrapper className="flex gap-10 py-10 lg:py-20 bg-conic-180">
-      <div className="sticky top-16 lg:w-[2600px] hidden lg:block rounded-md ">
+      <div className=" lg:w-[2600px] hidden lg:block rounded-md ">
         <Suspense fallback={<p>Loading...</p>}>
           <AboutGifAnimation url={gif} />
         </Suspense>

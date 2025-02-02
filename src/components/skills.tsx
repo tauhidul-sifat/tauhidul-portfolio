@@ -28,7 +28,7 @@ export default async function Skills() {
           ></div>
         </IncreaseSectionContentAnimation>
       </div>
-      <div className="sticky top-16 lg:w-[2600px] hidden lg:block rounded-md ">
+      <div className="lg:w-[2600px] hidden lg:block rounded-md ">
         <Suspense fallback={<p>Loading...</p>}>
           <AboutGifAnimation url={gif} />
         </Suspense>
