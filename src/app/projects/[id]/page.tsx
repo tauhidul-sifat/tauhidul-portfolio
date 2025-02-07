@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { WixClient } from "@/lib/wixClient";
 import Image from "next/image";
 import { media } from "@wix/sdk";
+import SnowflakeCursor from "@/components/SnowflakeCursor";
 
 export default async function SingleProject({
   params,
@@ -22,6 +23,7 @@ export default async function SingleProject({
   }
   return (
     <section>
+      <SnowflakeCursor />
       <div className="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
         <div className="lg:col-span-2 lg:px-40">
           <div className="py-8 lg:pe-8">

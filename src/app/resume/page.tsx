@@ -12,6 +12,7 @@ import { BadgeCheck, Earth, Mail, MapPin, Phone } from "lucide-react";
 import ContactFormModal from "@/components/ContactFormModal";
 import { media } from "@wix/sdk";
 import Link from "next/link";
+import FluidCursor from "@/components/FluidCursor";
 export default async function page() {
   const { items } = await WixClient.items.query("ResumeSectionContent").find();
   // console.log(items);
@@ -170,6 +171,7 @@ export default async function page() {
           </div>
         </div>
       </MaxWidthWrapper>
+      <FluidCursor />
     </div>
   );
 }

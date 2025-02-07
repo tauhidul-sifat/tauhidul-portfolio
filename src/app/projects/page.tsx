@@ -1,6 +1,7 @@
 import SectionTitleAnimation from "@/animation/SectionTitleAnimation";
 import { SkeletonCard } from "@/components/CardLoading";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import SnowflakeCursor from "@/components/SnowflakeCursor";
 import { WixClient } from "@/lib/wixClient";
 import { media } from "@wix/sdk";
 import Image from "next/image";
@@ -12,6 +13,7 @@ export default async function ProjectPage() {
   if (!items.length)
     return (
       <SectionTitleAnimation className="overflow-x-hidden my-3">
+        <SnowflakeCursor />
         <p className="grid min-h-[90vh] place-content-center lg:text-4xl">
           <span>No projects found</span>
         </p>
@@ -20,6 +22,7 @@ export default async function ProjectPage() {
 
   return (
     <div>
+      <SnowflakeCursor />
       <MaxWidthWrapper className="my-5">
         <div className="text-center my-2 lg:my-6">
           <h2 className="text-4xl font-semibold"> Project Phoenix</h2>

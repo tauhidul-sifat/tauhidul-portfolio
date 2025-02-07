@@ -1,9 +1,11 @@
 import About from "@/components/about";
+import FluidCursor from "@/components/FluidCursor";
 
 export default function page() {
   return (
     <div>
       <About />
+      <FluidCursor />
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import CharacterCursor from "@/components/CharacterCursor";
 import ContactForm from "@/components/ContactForm";
 import { FooterJson } from "@/constant";
 import { WixClient } from "@/lib/wixClient";
@@ -75,6 +76,7 @@ export default async function page() {
           </div>
         </div>
       </div>
+      <CharacterCursor />
     </section>
   );
 }

@@ -25,7 +25,7 @@ const Blogs = async () => {
             <Link
               key={item._id}
               className="group flex flex-col backdrop-blur-3xl border-primary/40 border hover:scale-105 duration-200 rounded-xl hover:shadow-lg focus:outline-none focus:shadow-md transition"
-              href="#"
+              href={`/blogs/${item._id}`}
             >
               <div className="aspect-w-16 aspect-h-9">
                 <Image

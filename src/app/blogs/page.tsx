@@ -1,6 +1,7 @@
 import SectionTitleAnimation from "@/animation/SectionTitleAnimation";
 import { SkeletonCard } from "@/components/CardLoading";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import RainbowCursor from "@/components/RainbowCursor";
 import { WixClient } from "@/lib/wixClient";
 import { media } from "@wix/sdk";
 import Image from "next/image";
@@ -57,6 +58,7 @@ export default async function BlogAndArticlePage() {
           })}
         </div>
       </MaxWidthWrapper>
+      <RainbowCursor />
     </div>
   );
 }
