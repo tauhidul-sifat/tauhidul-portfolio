@@ -5,7 +5,7 @@ export default function page() {
   return (
     <div>
       <Skills />
-      <BubbleCursor />
+      {/* <BubbleCursor /> */}
     </div>
   );
 }

@@ -21,7 +21,7 @@ export const HeaderJsonData = {
 
 export const FooterJson = {
   copyRight: `© ${date.getFullYear()} Tauhidul Islam. All rights reserved.`,
-  Developed: "Designed & Developed with ❤️ by Tauhidul Islam.",
+  Developed: "Designed & Developed with ❤️ by Tauhidul Islam Sifat.",
   socialMedias: [
     {
       name: "Fiverr",
@@ -31,12 +31,12 @@ export const FooterJson = {
     {
       name: "Up Work",
       Icon: FaSquareUpwork,
-      link: "https://upwork.com/",
+      link: "https://www.upwork.com/freelancers/~01bab8bed7f993b6a7",
     },
     {
       name: "Linkedin",
       Icon: BsLinkedin,
-      link: "https://linkedin.com/",
+      link: "https://www.linkedin.com/in/tauhidul-sifat",
     },
     {
       name: "Freelancer",
@@ -46,7 +46,7 @@ export const FooterJson = {
     {
       name: "Github",
       Icon: FaGithub,
-      link: "https://github.com/",
+      link: "https://github.com/tauhidul-sifat",
     },
   ],
   brand: "",

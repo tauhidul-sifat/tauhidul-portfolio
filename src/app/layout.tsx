@@ -11,8 +11,10 @@ export const metadata: Metadata = {
   title: `Tauhidul Islam - MERN Stack Developer Portfolio`,
   description:
     "Tauhidul Islam is a talented MERN Stack developer with a proven track record of delivering exceptional web projects. With expertise in MongoDB, Express.js, React.js, and Node.js, I specialize in crafting dynamic and responsive websites.",
+  verification: {
+    google: "-QB8MHoSxqXQVJqfjMZp2O3-FDkGw5rgDkUp-55l-C0",
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{

@@ -58,7 +58,7 @@ export default async function BlogAndArticlePage() {
           })}
         </div>
       </MaxWidthWrapper>
-      <RainbowCursor />
+      {/* <RainbowCursor /> */}
     </div>
   );
 }

@@ -22,7 +22,7 @@ export default async function ProjectPage() {
 
   return (
     <div>
-      <SnowflakeCursor />
+      {/* <SnowflakeCursor /> */}
       <MaxWidthWrapper className="my-5">
         <div className="text-center my-2 lg:my-6">
           <h2 className="text-4xl font-semibold"> Project Phoenix</h2>

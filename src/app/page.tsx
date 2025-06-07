@@ -15,7 +15,7 @@ const Home = () => {
         <Skills />
         <hr />
         <Blogs />
-        <CanvasCursor />
+        {/* <CanvasCursor /> */}
       </MaxWidthWrapper>
     </>
   );
