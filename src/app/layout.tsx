@@ -6,6 +6,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import FixedMedias from "@/components/FixedMedias";
 import { Toaster } from "@/components/ui/toaster";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: `Tauhidul Islam - MERN Stack Developer Portfolio`,
@@ -22,6 +23,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-SY64NKKPDV"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SY64NKKPDV');
+          `}
+        </Script>
+      </head>
       <body
         className={cn(
           "relative h-full antialiased scroll-smooth selection:bg-primary selection:text-primary-foreground "
